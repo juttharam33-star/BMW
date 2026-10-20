@@ -56,11 +56,11 @@ export default function Configurator() {
     };
 
     try {
-      const res = await fetch('https://bmw-production-5ee1.up.railway.app/api/configurations', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
+     const res = await fetch('https://bmw-production-5ee1.up.railway.app/api/configurations', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify(payload),
+});
 
       const data = await res.json();
       if (data.success) {

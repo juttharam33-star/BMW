@@ -53,6 +53,6 @@ app.get('/api/configurations', async (req, res) => {
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`✓ POWER TUNING Backend running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`POWER TUNING Backend running on port ${PORT}`);
 });
