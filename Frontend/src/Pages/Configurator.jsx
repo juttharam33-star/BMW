@@ -56,7 +56,7 @@ export default function Configurator() {
     };
 
     try {
-      const res = await fetch('http://localhost:5000/api/configurations', {
+      const res = await fetch('https://bmw-production-5ee1.up.railway.app/api/configurations', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
